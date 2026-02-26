@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designer.io | Portfolio</title>
+    <title>Portfolio | Développeur Full-Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style/index.css" />
@@ -17,7 +17,7 @@
       class="fixed top-0 w-full z-50 py-6 transition-all duration-300"
     >
       <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-        <div class="text-2xl font-bold gradient-text">DESIGNER.IO</div>
+        <div class="text-2xl font-bold gradient-text">PORTFOLIO</div>
 
         <div
           class="hidden md:flex items-center space-x-4 bg-gray-900/50 rounded-full px-4 py-1 border border-gray-800"
@@ -28,14 +28,14 @@
             >Accueil</a
           >
           <a
+            href="#skills"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all"
+            >Compétences</a
+          >
+          <a
             href="#projects"
             class="nav-link px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all"
             >Projets</a
-          >
-          <a
-            href="#about"
-            class="nav-link px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-all"
-            >À propos</a
           >
           <a
             href="#contact"
@@ -59,15 +59,13 @@
         <div
           class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-medium mb-8 animate-pulse"
         >
-          <span>Disponible pour de nouveaux projets</span>
+          <span>Développeur passionné prêt pour de nouveaux défis</span>
         </div>
         <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-          Concevoir des <span class="text-blue-500">expériences</span><br />
-          qui marquent les esprits.
+          Donner vie à vos idées via du <br/><span class="text-blue-500">code performant</span>.
         </h1>
         <p class="text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">
-          Spécialiste UI/UX et Développeur, je transforme des concepts complexes
-          en interfaces intuitives et esthétiques.
+          Développeur Polyvalent. Je conçois et développe des applications web et logicielles robustes, de l'interface utilisateur à la base de données.
         </p>
         <div
           class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
@@ -76,7 +74,7 @@
             href="#projects"
             class="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-bold transition-all transform hover:-translate-y-1 shadow-lg shadow-blue-500/20 text-center"
           >
-            Voir mon travail
+            Voir mes projets
           </a>
           <a
             href="#contact"
@@ -88,46 +86,66 @@
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="py-12 border-y border-gray-900 bg-gray-900/20">
-      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div
-          class="flex items-start space-x-4 p-6 rounded-2xl hover:bg-white/5 transition-colors"
-        >
-          <div class="p-3 bg-blue-500/10 rounded-lg text-blue-500">
-            <i data-lucide="layout"></i>
-          </div>
-          <div>
-            <h3 class="font-bold mb-1">User Centric</h3>
-            <p class="text-sm text-gray-400">
-              Design basé sur les données et les besoins réels.
-            </p>
-          </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 border-y border-gray-900 bg-gray-900/20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Mes Compétences</h2>
+          <div class="w-20 h-1.5 bg-blue-600 rounded-full mx-auto"></div>
         </div>
-        <div
-          class="flex items-start space-x-4 p-6 rounded-2xl hover:bg-white/5 transition-colors"
-        >
-          <div class="p-3 bg-purple-500/10 rounded-lg text-purple-500">
-            <i data-lucide="monitor"></i>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Frontend -->
+          <div class="p-6 rounded-2xl bg-gray-800/50 border border-gray-800 hover:border-blue-500/50 transition-colors">
+            <div class="p-3 bg-blue-500/10 w-fit rounded-lg text-blue-500 mb-4">
+              <i data-lucide="layout-template"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Frontend</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> HTML & CSS</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> JavaScript</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> TypeScript</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Angular (Débutant)</li>
+            </ul>
           </div>
-          <div>
-            <h3 class="font-bold mb-1">Responsive</h3>
-            <p class="text-sm text-gray-400">
-              Adaptabilité parfaite sur tous les supports.
-            </p>
+          
+          <!-- Backend -->
+          <div class="p-6 rounded-2xl bg-gray-800/50 border border-gray-800 hover:border-purple-500/50 transition-colors">
+            <div class="p-3 bg-purple-500/10 w-fit rounded-lg text-purple-500 mb-4">
+              <i data-lucide="server"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Backend</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-500"></div> PHP & Laravel</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-500"></div> Java</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-purple-500"></div> VB.NET</li>
+            </ul>
           </div>
-        </div>
-        <div
-          class="flex items-start space-x-4 p-6 rounded-2xl hover:bg-white/5 transition-colors"
-        >
-          <div class="p-3 bg-emerald-500/10 rounded-lg text-emerald-500">
-            <i data-lucide="layers"></i>
+
+          <!-- Base de données -->
+          <div class="p-6 rounded-2xl bg-gray-800/50 border border-gray-800 hover:border-emerald-500/50 transition-colors">
+            <div class="p-3 bg-emerald-500/10 w-fit rounded-lg text-emerald-500 mb-4">
+              <i data-lucide="database"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Base de données</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> MySQL</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> Conception BDD</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> Optimisation requêtes</li>
+            </ul>
           </div>
-          <div>
-            <h3 class="font-bold mb-1">Clean Code</h3>
-            <p class="text-sm text-gray-400">
-              Architecture propre et performances optimisées.
-            </p>
+
+          <!-- Outils -->
+          <div class="p-6 rounded-2xl bg-gray-800/50 border border-gray-800 hover:border-orange-500/50 transition-colors">
+            <div class="p-3 bg-orange-500/10 w-fit rounded-lg text-orange-500 mb-4">
+              <i data-lucide="wrench"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3">Outils & Méthodes</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Git & GitHub</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Clean Code</li>
+              <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Architecture REST</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -148,29 +166,22 @@
           <div
             class="group bg-gray-900/40 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all"
           >
-            <div class="h-48 bg-gray-800 relative">
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent opacity-60"
-              ></div>
+            <div class="h-48 bg-gray-800 relative flex items-center justify-center">
+               <i data-lucide="shopping-cart" class="w-16 h-16 text-gray-600 group-hover:text-blue-500 transition-colors"></i>
             </div>
             <div class="p-6">
               <span
                 class="text-xs font-bold text-blue-500 uppercase tracking-widest"
-                >Web Design</span
+                >Application Web</span
               >
               <h3 class="text-xl font-bold mt-2 mb-3">Plateforme E-commerce</h3>
               <p class="text-gray-400 text-sm mb-6">
-                Interface axée sur la conversion et l'UX.
+                Boutique en ligne complète avec gestion des stocks et de panier.
               </p>
-              <div class="flex gap-2">
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >HTML</span
-                >
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >CSS</span
-                >
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">Laravel</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">PHP</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">MySQL</span>
               </div>
             </div>
           </div>
@@ -178,25 +189,22 @@
           <div
             class="group bg-gray-900/40 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all"
           >
-            <div class="h-48 bg-gray-800 relative"></div>
+            <div class="h-48 bg-gray-800 relative flex items-center justify-center">
+               <i data-lucide="package" class="w-16 h-16 text-gray-600 group-hover:text-blue-500 transition-colors"></i>
+            </div>
             <div class="p-6">
               <span
                 class="text-xs font-bold text-blue-500 uppercase tracking-widest"
-                >Mobile App</span
+                >Logiciel Bureau</span
               >
-              <h3 class="text-xl font-bold mt-2 mb-3">App de Santé</h3>
+              <h3 class="text-xl font-bold mt-2 mb-3">Gestion de Stock</h3>
               <p class="text-gray-400 text-sm mb-6">
-                Conception mobile-first accessible.
+                Outil complet de gestion d'inventaire pour les entreprises.
               </p>
-              <div class="flex gap-2">
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >Figma</span
-                >
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >UI Kit</span
-                >
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">Java</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">VB.NET</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">MySQL</span>
               </div>
             </div>
           </div>
@@ -204,25 +212,22 @@
           <div
             class="group bg-gray-900/40 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all"
           >
-            <div class="h-48 bg-gray-800 relative"></div>
+            <div class="h-48 bg-gray-800 relative flex items-center justify-center">
+               <i data-lucide="layout-dashboard" class="w-16 h-16 text-gray-600 group-hover:text-blue-500 transition-colors"></i>
+            </div>
             <div class="p-6">
               <span
                 class="text-xs font-bold text-blue-500 uppercase tracking-widest"
                 >Dashboard</span
               >
-              <h3 class="text-xl font-bold mt-2 mb-3">Analytique Data</h3>
+              <h3 class="text-xl font-bold mt-2 mb-3">Panel Administrateur</h3>
               <p class="text-gray-400 text-sm mb-6">
-                Visualisation de données complexes.
+                Interface client riche avec gestion temps-réel des données.
               </p>
-              <div class="flex gap-2">
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >JS</span
-                >
-                <span
-                  class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase"
-                  >API</span
-                >
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">Angular</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">TypeScript</span>
+                <span class="text-[10px] px-2 py-1 bg-gray-800 text-gray-300 rounded uppercase">Tailwind</span>
               </div>
             </div>
           </div>
@@ -267,7 +272,7 @@
     <footer
       class="py-12 border-t border-gray-900 text-center text-sm text-gray-500"
     >
-      <p>© 2024 Designer.io - Fait avec HTML & Tailwind CSS.</p>
+      <p>© 2024 Portfolio - Développeur Full-Stack.</p>
     </footer>
 
     <script src="script/index.js"></script>
