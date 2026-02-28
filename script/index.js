@@ -1,6 +1,17 @@
 // Initialisation des icônes Lucide
 lucide.createIcons();
 
+// Gestion du préchargeur (Preloader)
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    // Petit délai pour une transition plus fluide
+    setTimeout(() => {
+      preloader.classList.add("preloader-hidden");
+    }, 500);
+  }
+});
+
 // Gestion du scroll pour la barre de navigation
 window.addEventListener("scroll", () => {
   const nav = document.getElementById("navbar");
