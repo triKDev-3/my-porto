@@ -16,7 +16,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Pinterest-like cards */
 .pin-card {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -51,7 +50,6 @@
   color: #94a3b8;
 }
 
-/* Scroll reveals */
 .reveal,
 .reveal-left,
 .reveal-right,
@@ -75,7 +73,6 @@
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
 
-/* Avatar */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
