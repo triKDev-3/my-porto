@@ -3,11 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Portfolio de KODO Koffi Kévin — Développeur Full-Stack Web & Mobile Junior. Laravel, React, Tailwind, APIs REST. Lomé, Togo." />
-<meta name="keywords" content="KODO Koffi Kévin, Développeur Full-Stack, Lomé, Togo, Laravel, React, Tailwind CSS, PHP, APIs REST, MySQL, PostgreSQL" />
+<meta name="description" content="Portfolio de KODO Koffi Kévin — Développeur Full-Stack Web & Mobile Junior." />
 <meta name="author" content="KODO Koffi Kévin" />
-<meta property="og:title" content="KODO Koffi Kévin | Développeur Full-Stack" />
-<meta property="og:description" content="Développeur Web & Mobile Junior. Applications web modernes, APIs RESTful avec Laravel, interfaces React & Tailwind." />
 <link rel="canonical" href="https://trikdev-portofolio.netlify.app/" />
 <link rel="icon" type="image/png" href="img/1002602233.png" />
 <title>KODO Koffi Kévin | Développeur Full-Stack</title>
@@ -17,278 +14,172 @@
 <link rel="stylesheet" href="style/index.css" />
 </head>
 <body class="bg-[#f7f7f5] text-slate-900 dark:bg-[#0c0c0e] dark:text-white transition-colors duration-500 font-sans antialiased">
+
 <nav id="navbar" class="fixed top-0 w-full z-50 py-6 transition-all duration-300">
-<div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-<a href="#home"><img src="img/logo-light.png" alt="triKDev" class="h-10 md:h-12 w-auto object-contain" /></a>
-<div class="hidden md:flex items-center space-x-1 bg-slate-200/80 dark:bg-white/5 rounded-full px-3 py-1 border border-slate-300/60 dark:border-white/10">
-<a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-blue-500" data-i18n="nav-home">Accueil</a>
-<a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav-about">Profil</a>
-<a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav-skills">Compétences</a>
-<a href="#parcours" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav-timeline">Parcours</a>
-<a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav-projects">Projets</a>
-<a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav-contact">Contact</a>
-</div>
-<div class="flex items-center space-x-3">
-<button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-full bg-slate-200 dark:bg-white/10 text-xs font-bold" id="lang-toggle">EN</button>
-<button onclick="toggleDarkMode()" class="p-2 rounded-full bg-slate-200 dark:bg-white/10"><i data-lucide="sun" id="theme-icon" class="w-5 h-5"></i></button>
-<button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-full bg-slate-200 dark:bg-white/10"><i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i></button>
-</div>
-</div>
-<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#f7f7f5]/95 dark:bg-[#0c0c0e]/95 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-4">
-<div class="flex flex-col space-y-1 px-6">
-<a href="#home" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-home">Accueil</a>
-<a href="#about" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-about">Profil</a>
-<a href="#skills" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-skills">Compétences</a>
-<a href="#parcours" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-timeline">Parcours</a>
-<a href="#projects" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-projects">Projets</a>
-<a href="#contact" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav-contact">Contact</a>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <a href="#home"><img id="site-logo" src="img/logo-light.png" alt="triKDev" class="h-10 md:h-12 w-auto object-contain" /></a>
+    <div class="hidden md:flex items-center space-x-1 bg-slate-200/80 dark:bg-white/5 rounded-full px-3 py-1 border border-slate-300/60 dark:border-white/10">
+      <a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-blue-500" data-i18n="nav.home">Accueil</a>
+      <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav.about">Profil</a>
+      <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav.skills">Compétences</a>
+      <a href="#parcours" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav.timeline">Parcours</a>
+      <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav.projects">Projets</a>
+      <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="flex items-center space-x-3">
+      <button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-full bg-slate-200 dark:bg-white/10 text-xs font-bold" id="lang-toggle">EN</button>
+      <button onclick="toggleDarkMode()" class="p-2 rounded-full bg-slate-200 dark:bg-white/10"><i data-lucide="sun" id="theme-icon" class="w-5 h-5"></i></button>
+      <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-full bg-slate-200 dark:bg-white/10"><i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#f7f7f5]/95 dark:bg-[#0c0c0e]/95 backdrop-blur-lg border-b border-slate-200 dark:border-white/10 py-4">
+    <div class="flex flex-col space-y-1 px-6">
+      <a href="#home" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.home">Accueil</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.about">Profil</a>
+      <a href="#skills" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.skills">Compétences</a>
+      <a href="#parcours" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.timeline">Parcours</a>
+      <a href="#projects" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.projects">Projets</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="px-4 py-3 text-sm font-medium rounded-lg" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
 </nav>
 
 <section id="home" class="pt-32 pb-20 px-6">
-<div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
-<div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-<div class="reveal-up inline-flex items-center bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-medium mb-8">
-<span data-i18n="hero-badge">Full-Stack Web & Mobile · Disponible</span>
-</div>
-<h1 class="reveal-up delay-100 text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
-<span data-i18n="hero-title">Salut, je suis</span><br /><span class="text-blue-500">KODO Koffi Kévin</span>
-</h1>
-<p class="reveal-up delay-200 text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed" data-i18n="hero-desc">
-Développeur Web & Mobile Junior. Je conçois des applications web modernes et des APIs RESTful avec Laravel, associées à des interfaces réactives en JavaScript / React.
-</p>
-<div class="reveal-up delay-300 flex flex-col sm:flex-row gap-3">
-<a href="#projects" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold transition-all shadow-lg shadow-blue-500/20 text-center" data-i18n="hero-btn-projects">Voir mes projets</a>
-<a href="#contact" class="px-8 py-4 border border-amber-500/50 text-amber-500 hover:bg-amber-500 hover:text-white rounded-xl font-bold transition-all text-center flex items-center justify-center gap-2">
-<i data-lucide="mail" class="w-5 h-5"></i><span data-i18n="hero-btn-contact">Me contacter</span>
-</a>
-<a href="img/cv_KODO Koffi Kévin.pdf" target="_blank" class="px-8 py-4 bg-slate-200 dark:bg-white/10 rounded-xl font-bold transition-all text-center flex items-center justify-center gap-2">
-<i data-lucide="download" class="w-5 h-5"></i><span data-i18n="hero-btn-cv">Mon CV</span>
-</a>
-</div>
-</div>
-<div class="reveal-up flex-shrink-0">
-<div class="relative profile-avatar">
-<div class="avatar-glow absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-amber-500 blur-xl opacity-30 scale-110"></div>
-<div class="avatar-border relative p-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-amber-500">
-<img src="img/PXL_20250112_143514289.PORTRAIT.jpg" alt="KODO Koffi Kévin" class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-[#f7f7f5] dark:border-[#0c0c0e]" />
-</div>
-<div class="absolute -bottom-2 -right-2 bg-white dark:bg-zinc-900 rounded-xl px-3 py-1.5 shadow-lg border border-slate-200 dark:border-white/10 flex items-center gap-2">
-<span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
-<span class="text-xs font-semibold">Disponible</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+    <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <div class="reveal-up inline-flex items-center bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-medium mb-8">
+        <span id="hero-badge">Full-Stack Web & Mobile · Disponible</span>
+      </div>
+      <h1 class="reveal-up delay-100 text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
+        <span id="hero-title">Salut, je suis</span><br />
+        <span class="text-blue-500" id="hero-name">KODO Koffi Kévin</span>
+      </h1>
+      <p class="reveal-up delay-200 text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed" id="hero-desc"></p>
+      <div class="reveal-up delay-300 flex flex-col sm:flex-row gap-3">
+        <a href="#projects" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold transition-all shadow-lg shadow-blue-500/20 text-center" id="btn-projects">Voir mes projets</a>
+        <a href="#contact" class="px-8 py-4 border border-amber-500/50 text-amber-500 hover:bg-amber-500 hover:text-white rounded-xl font-bold transition-all text-center flex items-center justify-center gap-2">
+          <i data-lucide="mail" class="w-5 h-5"></i><span id="btn-contact">Me contacter</span>
+        </a>
+        <a id="btn-cv" href="img/cv_KODO Koffi Kévin.pdf" target="_blank" class="px-8 py-4 bg-slate-200 dark:bg-white/10 rounded-xl font-bold transition-all text-center flex items-center justify-center gap-2">
+          <i data-lucide="download" class="w-5 h-5"></i><span id="btn-cv-label">Mon CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="reveal-up flex-shrink-0">
+      <div class="relative profile-avatar">
+        <div class="avatar-glow absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-amber-500 blur-xl opacity-30 scale-110"></div>
+        <div class="avatar-border relative p-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-amber-500">
+          <img id="hero-portrait" src="img/PXL_20250112_143514289.PORTRAIT.jpg" alt="Portrait" class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-[#f7f7f5] dark:border-[#0c0c0e]" />
+        </div>
+        <div id="available-badge" class="absolute -bottom-2 -right-2 bg-white dark:bg-zinc-900 rounded-xl px-3 py-1.5 shadow-lg border border-slate-200 dark:border-white/10 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
+          <span class="text-xs font-semibold" id="available-label">Disponible</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="about" class="py-24 px-6 border-t border-slate-200/80 dark:border-white/5 overflow-hidden">
-<div class="max-w-4xl mx-auto">
-<div class="reveal-up text-center mb-12">
-<h2 class="text-3xl font-bold mb-4" data-i18n="about-title">À Propos</h2>
-<div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
-</div>
-<div class="flex flex-col md:flex-row items-center gap-10">
-<div class="reveal-left shrink-0">
-<div class="relative p-1 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500">
-<img src="img/1002602233.png" alt="KODO Koffi Kévin" class="w-48 h-48 rounded-2xl object-cover object-top" />
-</div>
-</div>
-<div class="reveal-right pin-card p-8 flex-1">
-<p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed" data-i18n="about-text">
-Développeur Web & Mobile Junior passionné et rigoureux, titulaire du BTS en Développement d'Applications (soutenance en cours). Fort d'une expérience pratique en entreprise, je conçois des applications web modernes et des APIs RESTful performantes avec PHP et Laravel, associées à des interfaces réactives en JavaScript. Motivé et méthodique, je mets ma réactivité au service de projets digitaux ambitieux.
-</p>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto">
+    <div class="reveal-up text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4" id="sec-about">À Propos</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="reveal-left shrink-0">
+        <div class="relative p-1 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500">
+          <img id="about-image" src="img/1002602233.png" alt="About" class="w-48 h-48 rounded-2xl object-cover object-top" />
+        </div>
+      </div>
+      <div class="reveal-right pin-card p-8 flex-1">
+        <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed" id="about-text"></p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="skills" class="py-24 px-6 overflow-hidden">
-<div class="max-w-6xl mx-auto">
-<div class="reveal-up text-center mb-16">
-<h2 class="text-3xl font-bold mb-4" data-i18n="skills-title">Mes Compétences</h2>
-<div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="reveal-up pin-card p-6">
-<div class="p-3 bg-amber-500/10 w-fit rounded-lg text-amber-500 mb-4"><i data-lucide="layout-template"></i></div>
-<h3 class="font-bold text-xl mb-3" data-i18n="skills-frontend">Frontend</h3>
-<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>HTML5 · CSS3</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>JavaScript</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>React</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Tailwind CSS</li>
-</ul>
-</div>
-<div class="reveal-up delay-100 pin-card p-6">
-<div class="p-3 bg-purple-500/10 w-fit rounded-lg text-purple-500 mb-4"><i data-lucide="server"></i></div>
-<h3 class="font-bold text-xl mb-3" data-i18n="skills-backend">Backend & APIs</h3>
-<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>PHP</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>Laravel</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>APIs RESTful</li>
-</ul>
-</div>
-<div class="reveal-up delay-200 pin-card p-6">
-<div class="p-3 bg-emerald-500/10 w-fit rounded-lg text-emerald-500 mb-4"><i data-lucide="database"></i></div>
-<h3 class="font-bold text-xl mb-3" data-i18n="skills-db">Base de données</h3>
-<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>MySQL</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>PostgreSQL</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>SQLite · Supabase · Firebase</li>
-</ul>
-</div>
-<div class="reveal-up delay-300 pin-card p-6">
-<div class="p-3 bg-orange-500/10 w-fit rounded-lg text-orange-500 mb-4"><i data-lucide="wrench"></i></div>
-<h3 class="font-bold text-xl mb-3" data-i18n="skills-tools">Outils & Langues</h3>
-<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>Git & GitHub</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>Déploiement web</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>FR · EN technique · Ewe</li>
-</ul>
-</div>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal-up text-center mb-16">
+      <h2 class="text-3xl font-bold mb-4" id="sec-skills">Mes Compétences</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
+    </div>
+    <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
 </section>
 
 <section id="parcours" class="py-24 px-6 border-y border-slate-200/80 dark:border-white/5 overflow-hidden">
-<div class="max-w-6xl mx-auto">
-<div class="reveal-up text-center mb-16">
-<h2 class="text-3xl font-bold mb-4" data-i18n="parcours-title">Parcours</h2>
-<div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<div class="reveal-left">
-<h3 class="text-xl font-bold mb-6 flex items-center text-blue-500"><i data-lucide="graduation-cap" class="mr-3 w-6 h-6"></i><span data-i18n="parcours-edu">Formations</span></h3>
-<div class="space-y-5">
-<div class="pin-card p-5">
-<p class="font-semibold" data-i18n="parcours-edu-dev">Développement d'applications</p>
-<p class="text-sm text-slate-500 mt-1">BTS · Institut Polytechnique DEFITECH, Lomé</p>
-<p class="text-xs text-blue-400 mt-2" data-i18n="parcours-date-dev">2023 - 2025</p>
-</div>
-<div class="pin-card p-5">
-<p class="font-semibold" data-i18n="parcours-edu-bac">Baccalauréat Scientifique</p>
-<p class="text-sm text-slate-500 mt-1">Lycée de Hédzranawoé, Lomé</p>
-<p class="text-xs text-blue-400 mt-2" data-i18n="parcours-date-bac">2021</p>
-</div>
-</div>
-</div>
-<div class="reveal-right">
-<h3 class="text-xl font-bold mb-6 flex items-center text-amber-500"><i data-lucide="briefcase" class="mr-3 w-6 h-6"></i><span data-i18n="parcours-exp">Expériences</span></h3>
-<div class="space-y-5">
-<div class="pin-card p-5">
-<p class="font-semibold" data-i18n="parcours-job-intern">Stagiaire Développeur Web & Mobile</p>
-<p class="text-sm text-slate-500 mt-1">DK-TECH, Lomé</p>
-<p class="text-xs text-amber-400 mt-2" data-i18n="parcours-date-intern">Nov. 2025 - Févr. 2026</p>
-</div>
-<div class="pin-card p-5">
-<p class="font-semibold" data-i18n="parcours-job-secretary">Secrétaire Bureautique</p>
-<p class="text-sm text-slate-500 mt-1">Société Teneli Afrique, Lomé</p>
-<p class="text-xs text-amber-400 mt-2" data-i18n="parcours-date-secretary">Oct. 2024 - Déc. 2024</p>
-</div>
-<div class="pin-card p-5">
-<p class="font-semibold" data-i18n="parcours-job-seller">Promoteur de Ventes</p>
-<p class="text-sm text-slate-500 mt-1">Société E-vendeur, Lomé</p>
-<p class="text-xs text-amber-400 mt-2" data-i18n="parcours-date-seller">Août 2023 - Oct. 2023</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal-up text-center mb-16">
+      <h2 class="text-3xl font-bold mb-4" id="sec-timeline">Parcours</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="reveal-left">
+        <h3 class="text-xl font-bold mb-6 flex items-center text-blue-500">
+          <i data-lucide="graduation-cap" class="mr-3 w-6 h-6"></i>
+          <span id="sec-education">Formations</span>
+        </h3>
+        <div id="education-list" class="space-y-5"></div>
+      </div>
+      <div class="reveal-right">
+        <h3 class="text-xl font-bold mb-6 flex items-center text-amber-500">
+          <i data-lucide="briefcase" class="mr-3 w-6 h-6"></i>
+          <span id="sec-experience">Expériences</span>
+        </h3>
+        <div id="experience-list" class="space-y-5"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="projects" class="py-24 px-6 overflow-hidden">
-<div class="max-w-6xl mx-auto">
-<div class="reveal-up text-center mb-12">
-<h2 class="text-3xl font-bold mb-4" data-i18n="projects-title">Mes Projets</h2>
-<div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<article class="reveal-up group pin-card flex flex-col overflow-hidden">
-<div class="h-44 bg-gradient-to-br from-rose-500/20 via-fuchsia-500/10 to-zinc-900 flex items-center justify-center relative">
-<i data-lucide="sparkles" class="w-14 h-14 text-rose-400/80 group-hover:scale-110 transition-transform duration-500"></i>
-<span class="absolute top-3 left-3 text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full bg-white/10 backdrop-blur text-rose-300 border border-white/10">Site vitrine</span>
-</div>
-<div class="p-5 flex flex-col flex-1">
-<h3 class="text-lg font-semibold tracking-tight mb-2">JC-EMPIRE</h3>
-<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5 flex-1" data-i18n="project-desc-jc">Déploiement complet d'un site vitrine moderne pour une marque de stylisme (en ligne).</p>
-<div class="flex items-center justify-between mt-auto gap-2">
-<div class="flex flex-wrap gap-1.5"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span></div>
-<a href="#" class="p-2 rounded-lg text-slate-500 hover:text-white hover:bg-blue-600 transition-all" aria-label="JC-EMPIRE"><i data-lucide="external-link" class="w-4 h-4"></i></a>
-</div>
-</div>
-</article>
-<article class="reveal-up delay-100 group pin-card flex flex-col overflow-hidden">
-<div class="h-44 bg-gradient-to-br from-violet-500/20 via-indigo-500/10 to-zinc-900 flex items-center justify-center relative">
-<i data-lucide="server" class="w-14 h-14 text-violet-400/80 group-hover:scale-110 transition-transform duration-500"></i>
-<span class="absolute top-3 left-3 text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full bg-white/10 backdrop-blur text-violet-300 border border-white/10">API Backend</span>
-</div>
-<div class="p-5 flex flex-col flex-1">
-<h3 class="text-lg font-semibold tracking-tight mb-2">Foleni-API</h3>
-<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5 flex-1" data-i18n="project-desc-foleni">Architecture et développement backend d'une API de gestion des files d'attente pour DK-TECH.</p>
-<div class="flex items-center justify-between mt-auto gap-2">
-<div class="flex flex-wrap gap-1.5"><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">REST</span></div>
-<a href="https://github.com/triKDev-3" target="_blank" rel="noopener" class="p-2 rounded-lg text-slate-500 hover:text-white hover:bg-blue-600 transition-all" aria-label="GitHub"><i data-lucide="github" class="w-4 h-4"></i></a>
-</div>
-</div>
-</article>
-<article class="reveal-up delay-200 group pin-card flex flex-col overflow-hidden">
-<div class="h-44 bg-gradient-to-br from-sky-500/20 via-cyan-500/10 to-zinc-900 flex items-center justify-center relative">
-<i data-lucide="building-2" class="w-14 h-14 text-sky-400/80 group-hover:scale-110 transition-transform duration-500"></i>
-<span class="absolute top-3 left-3 text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full bg-white/10 backdrop-blur text-sky-300 border border-white/10">Site institutionnel</span>
-</div>
-<div class="p-5 flex flex-col flex-1">
-<h3 class="text-lg font-semibold tracking-tight mb-2">DK-TECH-TOGO</h3>
-<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5 flex-1" data-i18n="project-desc-dktech">Contribution au développement du site institutionnel de la plateforme tech DK-TECH.</p>
-<div class="flex items-center justify-between mt-auto gap-2">
-<div class="flex flex-wrap gap-1.5"><span class="chip">Laravel</span><span class="chip">JS</span></div>
-<a href="https://dk-tech-togo.com/" target="_blank" rel="noopener" class="p-2 rounded-lg text-slate-500 hover:text-white hover:bg-blue-600 transition-all" aria-label="DK-TECH"><i data-lucide="external-link" class="w-4 h-4"></i></a>
-</div>
-</div>
-</article>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal-up text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4" id="sec-projects">Mes Projets</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
+    </div>
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
 </section>
 
 <section id="contact" class="py-24 px-6 overflow-hidden">
-<div class="max-w-6xl mx-auto">
-<div class="reveal-up text-center mb-16">
-<h2 class="text-3xl font-bold mb-4" data-i18n="contact-title">Me Contacter</h2>
-<div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="reveal-left space-y-6">
-<p class="text-slate-600 dark:text-slate-400" data-i18n="contact-desc">N'hésitez pas à me contacter pour toute question, projet de développement ou opportunité professionnelle.</p>
-<div class="space-y-3 text-sm">
-<p class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-blue-400"></i> kodokoffikevin@gmail.com</p>
-<p class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-blue-400"></i> +228 92 54 18 40</p>
-<p class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Lomé, Togo</p>
-</div>
-<div class="flex gap-3 pt-2">
-<a href="https://github.com/triKDev-3" target="_blank" class="w-11 h-11 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><i data-lucide="github" class="w-5 h-5"></i></a>
-<a href="https://wa.me/22892541840" target="_blank" class="w-11 h-11 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
-</div>
-</div>
-<div class="reveal-right">
-<form action="https://formspree.io/f/mojnbpwb" method="POST" class="space-y-4">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<input type="text" name="name" placeholder="Nom" data-i18n-placeholder="placeholder-name" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500" />
-<input type="email" name="email" placeholder="Email" data-i18n-placeholder="placeholder-email" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500" />
-</div>
-<textarea name="message" placeholder="Message" data-i18n-placeholder="placeholder-message" rows="5" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500"></textarea>
-<button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
-<span data-i18n="contact-btn">Envoyer</span><i data-lucide="send" class="w-4 h-4"></i>
-</button>
-</form>
-</div>
-</div>
-</div>
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal-up text-center mb-16">
+      <h2 class="text-3xl font-bold mb-4" id="sec-contact">Me Contacter</h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-full mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="reveal-left space-y-6">
+        <p class="text-slate-600 dark:text-slate-400" id="contact-desc"></p>
+        <div class="space-y-3 text-sm">
+          <p class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-blue-400"></i><span id="contact-email"></span></p>
+          <p class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-blue-400"></i><span id="contact-phone"></span></p>
+          <p class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i><span id="contact-address"></span></p>
+        </div>
+        <div class="flex gap-3 pt-2" id="social-links"></div>
+      </div>
+      <div class="reveal-right">
+        <form id="contact-form" method="POST" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" name="name" id="input-name" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500" />
+            <input type="email" name="email" id="input-email" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <textarea name="message" id="input-message" rows="5" required class="w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-blue-500"></textarea>
+          <button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
+            <span id="btn-send">Envoyer</span><i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="py-8 border-t border-slate-200/80 dark:border-white/5 text-center text-sm text-slate-500">
-<p>© <span id="current-year">2026</span> triKDev — Développeur Full-Stack</p>
+  <p>© <span id="current-year">2026</span> triKDev — Développeur Full-Stack</p>
 </footer>
+
 <script src="script/index.js"></script>
 </body>
 </html>
