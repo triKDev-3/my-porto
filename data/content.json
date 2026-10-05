@@ -1,1 +1,152 @@
-PLACEHOLDER_WILL_REPLACE
+{
+  "settings": {
+    "adminPassword": "trikdev2026",
+    "siteTitle": "KODO Koffi Kévin | Développeur Full-Stack",
+    "available": true,
+    "availableLabel": { "fr": "Disponible", "en": "Available" },
+    "cvPath": "img/cv_KODO Koffi Kévin.pdf",
+    "logoPath": "img/logo-light.png",
+    "portraitPath": "img/PXL_20250112_143514289.PORTRAIT.jpg",
+    "aboutImagePath": "img/1002602233.png",
+    "formspree": "https://formspree.io/f/mojnbpwb"
+  },
+  "profile": {
+    "name": "KODO Koffi Kévin",
+    "role": { "fr": "Développeur Full-Stack Web & Mobile Junior", "en": "Junior Full-Stack Web & Mobile Developer" },
+    "badge": { "fr": "Full-Stack Web & Mobile · Disponible", "en": "Full-Stack Web & Mobile · Available" },
+    "heroTitle": { "fr": "Salut, je suis", "en": "Hi, I am" },
+    "heroDesc": {
+      "fr": "Développeur Web & Mobile Junior. Je conçois des applications web modernes et des APIs RESTful avec Laravel, associées à des interfaces réactives en JavaScript / React.",
+      "en": "Junior Web & Mobile developer. I build modern web apps and RESTful APIs with Laravel, paired with reactive interfaces in JavaScript / React."
+    },
+    "about": {
+      "fr": "Développeur Web & Mobile Junior passionné et rigoureux, titulaire du BTS en Développement d'Applications (soutenance en cours). Fort d'une expérience pratique en entreprise, je conçois des applications web modernes et des APIs RESTful performantes avec PHP et Laravel, associées à des interfaces réactives en JavaScript. Motivé et méthodique, je mets ma réactivité au service de projets digitaux ambitieux.",
+      "en": "Passionate and rigorous Junior Web & Mobile developer, holding a BTS in Application Development (thesis in progress). With hands-on company experience, I design modern web applications and high-performance RESTful APIs with PHP and Laravel, paired with reactive JavaScript interfaces."
+    }
+  },
+  "contact": {
+    "email": "kodokoffikevin@gmail.com",
+    "phone": "+228 92 54 18 40",
+    "address": "Lomé, Togo (Hédzranawoé)",
+    "github": "https://github.com/triKDev-3",
+    "whatsapp": "https://wa.me/22892541840",
+    "linkedin": "https://www.linkedin.com/in/koffi-kévin-kodo-20a96b284",
+    "desc": {
+      "fr": "N'hésitez pas à me contacter pour toute question, projet de développement ou opportunité professionnelle.",
+      "en": "Feel free to reach out for questions, development projects or professional opportunities."
+    }
+  },
+  "skills": [
+    { "id": "frontend", "title": { "fr": "Frontend", "en": "Frontend" }, "icon": "layout-template", "color": "amber", "items": ["HTML5 · CSS3", "JavaScript", "React", "Tailwind CSS"] },
+    { "id": "backend", "title": { "fr": "Backend & APIs", "en": "Backend & APIs" }, "icon": "server", "color": "purple", "items": ["PHP", "Laravel", "APIs RESTful"] },
+    { "id": "database", "title": { "fr": "Base de données", "en": "Database" }, "icon": "database", "color": "emerald", "items": ["MySQL", "PostgreSQL", "SQLite · Supabase · Firebase"] },
+    { "id": "tools", "title": { "fr": "Outils & Langues", "en": "Tools & Languages" }, "icon": "wrench", "color": "orange", "items": ["Git & GitHub", "Déploiement web", "FR · EN technique · Ewe"] }
+  ],
+  "education": [
+    { "id": "bts", "title": { "fr": "Développement d'applications", "en": "Application Development" }, "place": "BTS · Institut Polytechnique DEFITECH, Lomé", "date": "2023 - 2025" },
+    { "id": "bac", "title": { "fr": "Baccalauréat Scientifique", "en": "Scientific Baccalaureate" }, "place": "Lycée de Hédzranawoé, Lomé", "date": "2021" }
+  ],
+  "experiences": [
+    {
+      "id": "dktech",
+      "title": { "fr": "Stagiaire Développeur Web & Mobile", "en": "Web & Mobile Developer Intern" },
+      "place": "DK-TECH, Lomé",
+      "date": { "fr": "Nov. 2025 - Févr. 2026", "en": "Nov. 2025 - Feb. 2026" },
+      "description": {
+        "fr": "Développement de fonctionnalités web et d'interfaces utilisateur réactives avec Laravel. Optimisation des requêtes et maintenance applicative.",
+        "en": "Web features and reactive UI with Laravel. Query optimization and app maintenance."
+      }
+    },
+    {
+      "id": "teneli",
+      "title": { "fr": "Secrétaire Bureautique", "en": "Office Secretary" },
+      "place": "Société Teneli Afrique, Lomé",
+      "date": { "fr": "Oct. 2024 - Déc. 2024", "en": "Oct. 2024 - Dec. 2024" },
+      "description": {
+        "fr": "Gestion administrative, organisation documentaire et rédaction de correspondances.",
+        "en": "Administrative management, document organization and correspondence."
+      }
+    },
+    {
+      "id": "evendeur",
+      "title": { "fr": "Promoteur de Ventes / Chargé de Clientèle", "en": "Sales Promoter / Account Manager" },
+      "place": "Société E-vendeur, Lomé",
+      "date": { "fr": "Août 2023 - Oct. 2023", "en": "Aug. 2023 - Oct. 2023" },
+      "description": {
+        "fr": "Prospection commerciale et suivi du portefeuille de la clientèle.",
+        "en": "Sales prospecting and customer portfolio follow-up."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "jc-empire",
+      "name": "JC-EMPIRE",
+      "type": { "fr": "Site vitrine", "en": "Showcase site" },
+      "description": {
+        "fr": "Déploiement complet d'un site vitrine moderne pour une marque de stylisme (en ligne).",
+        "en": "Full deployment of a modern showcase website for a fashion brand (live)."
+      },
+      "tags": ["HTML", "CSS", "JS"],
+      "link": "",
+      "icon": "sparkles",
+      "gradient": "from-rose-500/20 via-fuchsia-500/10"
+    },
+    {
+      "id": "foleni",
+      "name": "Foleni-API",
+      "type": { "fr": "API Backend", "en": "Backend API" },
+      "description": {
+        "fr": "Architecture et développement backend d'une API de gestion des files d'attente pour DK-TECH.",
+        "en": "Architecture and backend development of a queue management API for DK-TECH."
+      },
+      "tags": ["Laravel", "PHP", "REST"],
+      "link": "https://github.com/triKDev-3",
+      "icon": "server",
+      "gradient": "from-violet-500/20 via-indigo-500/10"
+    },
+    {
+      "id": "dktech-togo",
+      "name": "DK-TECH-TOGO",
+      "type": { "fr": "Site institutionnel", "en": "Institutional site" },
+      "description": {
+        "fr": "Contribution au développement du site institutionnel de la plateforme tech DK-TECH.",
+        "en": "Contribution to the institutional website of the DK-TECH tech platform."
+      },
+      "tags": ["Laravel", "JS"],
+      "link": "https://dk-tech-togo.com/",
+      "icon": "building-2",
+      "gradient": "from-sky-500/20 via-cyan-500/10"
+    }
+  ],
+  "ui": {
+    "nav": {
+      "home": { "fr": "Accueil", "en": "Home" },
+      "about": { "fr": "Profil", "en": "Profile" },
+      "skills": { "fr": "Compétences", "en": "Skills" },
+      "timeline": { "fr": "Parcours", "en": "Experience" },
+      "projects": { "fr": "Projets", "en": "Projects" },
+      "contact": { "fr": "Contact", "en": "Contact" }
+    },
+    "buttons": {
+      "projects": { "fr": "Voir mes projets", "en": "View my projects" },
+      "contact": { "fr": "Me contacter", "en": "Contact me" },
+      "cv": { "fr": "Mon CV", "en": "My CV" },
+      "send": { "fr": "Envoyer", "en": "Send" }
+    },
+    "sections": {
+      "about": { "fr": "À Propos", "en": "About Me" },
+      "skills": { "fr": "Mes Compétences", "en": "My Skills" },
+      "timeline": { "fr": "Parcours", "en": "Career Path" },
+      "education": { "fr": "Formations", "en": "Education" },
+      "experience": { "fr": "Expériences", "en": "Experience" },
+      "projects": { "fr": "Mes Projets", "en": "My Projects" },
+      "contact": { "fr": "Me Contacter", "en": "Contact Me" }
+    },
+    "placeholders": {
+      "name": { "fr": "Nom", "en": "Full Name" },
+      "email": { "fr": "Email", "en": "Email Address" },
+      "message": { "fr": "Message", "en": "Your Message" }
+    }
+  }
+}
